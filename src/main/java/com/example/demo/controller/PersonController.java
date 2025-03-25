@@ -31,7 +31,7 @@ public class PersonController {
     public List<Person> getPersons() {
         return persons;
     }
-
+    // Поиск обьекта Person по id
     @GetMapping("/{id}")
     public ResponseEntity<Person> findById(@PathVariable int id) {
         Optional<Person> person = persons.stream().filter(p -> p.getId() == id).findFirst();
