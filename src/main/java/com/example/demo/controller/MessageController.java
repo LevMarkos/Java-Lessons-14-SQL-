@@ -24,7 +24,7 @@ public class MessageController {
             new Message(3, "Ручка", "Устройство для письма", LocalDateTime.now())
     ));
 
-    // Вывод всех объектов Person
+    // Вывод всех объектов Message
     @GetMapping
     public List<Message> getMessages() {
         return messages;
